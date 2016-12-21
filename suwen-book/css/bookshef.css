@@ -1,0 +1,212 @@
+.bookshef{
+	width: 100%;
+}
+.bookshef_con{
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.bookcon_left{
+	width: 70%;
+	float: left;
+	
+}
+.booka,.bookb{
+	position: relative;
+	margin: 2%;
+	border-bottom: 1px dashed #000;
+	padding-bottom: 2%;
+}
+.booka>span,.bookb>span{
+	font:2rem "微软雅黑";
+	border: 2px solid #ffe001;
+	border-radius:10px;
+	padding: 1%;
+	margin-bottom: 2%;
+	display: block;
+	width: 20%;
+	text-align: center;
+}
+.booka>span:hover,.bookb>span:hover{
+	color: #fff;
+	background: #ffe001;
+	border: 2px solid #ffe001;
+}
+.booka .showimg,.bookb .showimg{
+	width: 87.8%;
+	margin: 0 auto;
+	height: 25rem;
+	overflow: hidden;
+	position: relative;
+}
+.booka .showimg ul,.bookb .showimg ul{
+
+	width:1690px;
+	/*width:360%;*/
+	/*margin: 0 auto;*/
+	/*margin-left: -10px;*/
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	float: left;
+	/*margin-left: 3%;*/
+}
+.booka .showimg ul li,.bookb .showimg ul li{
+	padding:0.5%;
+	float: left;
+	margin-right:1px;
+	border:1px solid #ccc;
+}
+.booka .showimg ul li span,.bookb .showimg ul li span{
+	display: block;
+	font:2rem "微软雅黑";
+}
+.booka .btna a,.bookb .btnb a{
+	display: block;
+	width: 14px;
+	height: 30px;	
+	transition:0.25s linear;
+}
+.booka .btna .preva,.bookb .btnb .prevb{
+	position: absolute;
+	background: url(../images/prev.png) no-repeat;
+	top:50%;
+	left:0;
+	opacity: 0.5;
+}
+.booka .btna .preva:hover,.bookb .btnb .prevb:hover{
+	opacity:1;
+}
+.booka .btna .nexta,.bookb .btnb .nextb{
+	background: url(../images/next.png) no-repeat;
+	position: absolute;
+	top:50%;
+	right: 0;
+	opacity: 0.5;
+}
+.booka .btna .nexta:hover,.bookb .btnb .nextb:hover{
+	opacity: 1;
+}
+.bookb{
+	border-bottom: none;
+	
+}
+.bookcon_right{
+	width:25%;
+	overflow: hidden;
+}
+.bookrank{
+	float: right;
+	width:70%;
+	margin-right: 15%;
+}
+.bookka{
+	border:1px solid #ccc;
+	width: 100%;
+	overflow: hidden;
+	background: #fafafa;
+}
+.bookrank a{
+	
+	display: block;
+	width: 100%;
+	text-align: center;
+	font:2rem/2 "微软雅黑";
+	font-weight: 300;
+	padding: 2%;
+	color: #bbb;
+}
+.bookrank a:hover{
+	color: #333;
+    background: #fff;
+    font-weight: bolder;
+}
+.bookrank span{
+	font:2.5rem "微软雅黑";
+	padding: 1%;
+	margin: 2%;
+	display: block;
+}
+/*============================change==========================*/
+
+.change{
+	width: 100%;
+	/*margin-top: 2%;*/
+	overflow: hidden;
+}
+.change_title{
+	width: 100%;
+	margin: 1%;
+}
+.change_title>span{
+	width: 10%;
+	font:2.5rem "微软雅黑";
+	margin: 0 auto;
+	display: block;
+	border: 2px solid #ffe001;
+	border-radius: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+.changecon{
+	width: 70%;
+	margin: 0 auto;
+	background: #fafafa;
+	overflow: hidden;
+	margin-top:2%;
+	padding-bottom: 2%;
+}
+.change_left{
+	width: 30%;
+	/*overflow: hidden;*/
+	margin-left: 10%;
+	/*margin-top:5%;*/
+	float: left;
+	height: 27rem;
+}
+.change_left ul{
+	width: 100%;
+		
+	overflow: hidden;
+	
+} 
+.change_left ul li{
+	width: 100%;
+	font: 2rem/2.5 "微软雅黑";
+}
+.change_right{
+	width: 50%;
+	float: left;
+	margin-left: 10%;
+	margin-top:5%;
+}
+.change_right form{
+	width: 70%;
+	margin:0 auto;
+
+}
+.change_right label{
+	font: 2rem/2.5 "微软雅黑"; 
+}
+.change_right input{
+	width: 60%;
+	border: 1px solid #000;
+	border-radius: 10px;
+	height: 2rem;
+	margin-top: 2%;
+	outline: none;
+	margin-bottom: 10%;
+	padding-left: 2%;
+}
+.change_right a{
+	font:2rem "微软雅黑";
+	padding:5%;
+}
+.change_right span{
+	width: 2px;
+	border: 1px solid  #000;
+    margin-top: 3%;
+}
+.change_right a:hover{
+	color: #ffe001;
+}

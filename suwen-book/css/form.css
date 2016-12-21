@@ -1,0 +1,109 @@
+.form{
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+    font:2rem "微软雅黑";
+    margin-top: 2%;
+}
+.form label{
+	width: 15%;
+}
+.form span{
+	padding: 5%;
+}
+.form_left{
+	width: 45%;
+	float: left;
+	background: #fafafa;
+}
+.form_left form{
+	width: 90%;
+	padding: 5%;
+}
+.form_right{
+
+	width: 40%;
+	float: left;
+	margin-left: 5%;
+
+}
+.form_right form{
+	width: 100%;
+    margin: 0 auto;
+	padding: 5%;
+}
+.form_right form ul li{width: 100%;}
+.form_right form ul li label{
+   padding: 1%;
+}
+.form form ul li input{
+	margin-top: 5%;
+	outline: none;
+	margin-left: 5%;
+	border: none;
+	border-bottom: 2px solid #000;
+}
+.form  .form_left ul li input{
+	background: #fafafa;
+}
+.form form ul li input:hover{
+	border-bottom: 2px solid #ffe001;
+	transition:border-bottom 0.5s;
+}
+
+.form_left button{
+	height:10rem; 
+	display: block;
+	width: 35%;background: url(../images/load-sign1.png) no-repeat left;border: none;overflow: hidden;
+	outline: none;
+	float: right;
+	margin-top: 10%;
+	transition:transform 2s;
+}
+.form_left button:hover{
+	background: url(../images/load-sign2.png) no-repeat left;
+	transform:rotate(20deg)
+}
+.form_right button{
+	height:10rem; 
+	display: block;
+	width: 60%;
+	background: url(../images/load-sign3.png) no-repeat left;
+	border: none;overflow: hidden;
+	outline: none;
+	float: right;
+	transition:transform 2s;
+}
+.form_right button:hover{
+	background: url(../images/load-sign4.png) no-repeat left;
+	transform:rotate(20deg)
+}
+fieldset{
+	padding: 10px;
+	border-radius: 5px;
+}
+legend{
+	color: #333;
+	border: 1px solid #333;
+	border-radius: 15px;
+	padding: 10px;
+	text-align: center;
+}
+legend:hover{
+	background: #ffe001;
+	color: #fff;
+	border: 1px solid #ffe001;
+}
+.filea{
+	display: block;
+	width:10%;
+	border: 1px solid #333;
+	border-radius: 15px;
+	margin-top: 5%;
+	text-align: center;
+}
+.filea:hover{
+	background: #ffe001;
+	color: #fff;
+	border: 1px solid #ffe001;
+}

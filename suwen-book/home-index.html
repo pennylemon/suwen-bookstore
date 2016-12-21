@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport” content=“width=device-width; initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"> </script>
+   <script src="js/style.js"></script>
+   <script type="text/javascript" src="js/home-banner.js"></script>
+      <script src="js/BreakingNews.js"></script>
+
+</head>
+<body>
+	<!-- 有两个javascript -->
+	<div class="logo-box">
+		<div class="logo-a">
+		<div class="logo">
+			<img class="img" src="images/home-logo.png" alt="">
+		</div>
+		<div class="logo-content">
+			<p>这是一个有颜值和价值的书吧。</p>
+			<div class="img"><img src="images/home-logo1.png" alt=""> </div>   
+			<p>我们的征途是星辰和大海，还有书海。</p>
+			<form action="" id="search">
+				<input type="text" value="想要了解..." id="inputSearch">
+				<input type="button">
+			</form>
+		</div>
+	</div>
+	</div>
+	
+	<div class="nav" >
+		<ul>
+			<li><a href="home-index.html">主&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                 <ul class="childnav">
+                 	<li><a href="">书籍分类</a></li>
+                 	<li><a href="">书吧分区</a></li>
+                 	<li><a href="">最新通知</a></li>
+                 	<li><a href="">联系我们</a></li>
+                 	<li><a href="">加入我们</a></li>
+                 </ul>
+			</li>
+			<li><a href="about.html">关于我们</a>
+                  <ul class="childnav">
+                 	<li><a href="">书吧故事</a></li>
+                 	<li><a href="">招聘信息</a></li>
+                 </ul>
+			</li>
+			<li><a href="inform.html">通&nbsp;&nbsp;&nbsp;&nbsp;知</a>
+                    <ul class="childnav">
+                 	<li><a href="">最新通知</a></li>
+                 	<li><a href="">小店新书</a></li>
+                 	<li><a href="">活动大赛</a></li>
+                 </ul>
+			</li>
+			<li><a href="bookshef.html">书&nbsp;&nbsp;&nbsp;&nbsp;架</a>
+                    <ul class="childnav">
+                 	<li><a href="">新书上市</a></li>
+                 	<li><a href="">热门连载</a></li>
+                 	<li><a href="">新书排行榜</a></li>
+                 	<li><a href="">交换书籍</a></li>
+                 </ul>
+			</li>
+			<li><a href="contacts.html">联系我们</a>
+                    <ul class="childnav">
+                 	<li><a href="">登录</a></li>
+                 	<li><a href="">注册</a></li>
+                 	<li><a href="">门店信息</a></li>
+                 	<li><a href="">联系方式</a></li>
+                 </ul>
+			</li>
+			<div class="clear"></div>
+		</ul>
+
+	</div>
+<div class="banner">
+	<div class="clear"></div>
+	<div class="banner_con" id="demo">
+		<div class="banner_show">
+			<ul id="demo1">
+				<li><img src="images/banner-1.png" alt=""></li>
+				<li><img src="images/banner-2.png" alt=""></li>
+				<li><img src="images/banner-3.png" alt=""></li>
+			</ul>
+			<ul id="demo2"></ul>
+		</div>
+		
+	</div>
+	<div class="tip">
+			<p>
+			<span>您来了</span>
+			欢迎在<span id="Timer">2016年9月25号14:45:35</span>访问<所谓书吧>，等候多时。
+			</p>
+    </div>
+</div>
+  <script>
+ 	var speed=25;
+    var tab=document.getElementById("demo");
+    var tab1=document.getElementById("demo1");
+    var tab2=document.getElementById("demo2");
+       tab2.innerHTML=tab1.innerHTML;
+      function marquee()//滚动函数
+     {
+      if(tab.scrollLeft>=tab2.offsetWidth)//盒子的左滚动宽度》=demo预备盒子的偏移宽度时
+      tab.scrollLeft-=tab1.offsetWidth
+      else{tab.scrollLeft++;}
+    }
+     var myMar=setInterval( marquee,speed);//鼠标移上去
+     tab.onmouseover=function(){
+      clearInterval(myMar)
+    };
+     tab.onmouseout=function(){
+      myMar=setInterval(marquee,speed)
+    };
+  </script>
+  
+	<div class="classfile">
+		<div class="book_class">
+			<div class="book-title">
+				<h1><div class="tubiao"><img src="images/book_title.png" alt=""></div>书籍分类</h1>
+				<form action="">
+					<input type="text" value="书名">
+					<input type="button" value="搜索">
+				</form>
+			</div>
+			<div class="book-content">
+				<div class="tab_menu">
+				<ul class="book_aside" >
+					<li class="book_asili_bg">文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学:</li>
+					<li>小&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说:</li>
+					<li>经济管理:</li>
+					<li>艺术设计:</li>
+					<li>教育考试:</li>
+					<li>更&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多</li>
+				</ul>
+			</div>
+				<div class="tab_box">
+				<ul class="book_asi_con" style="display:block">
+					<li><a href="">全部文学</a></li>
+					<li><a href="">文学经典</a></li>
+					<li><a href="">散文随笔</a></li>
+					<li><a href="">日记书信</a></li>
+					<li><a href="">纪实文学</a></li>
+					<li><a href="">寓言童话</a></li>
+					<li><a href="">戏曲曲艺</a></li>
+					<li><a href="">文学史</a></li>
+					<li><a href="">理论批评</a></li>
+					<li><a href="">诗歌赏析</a></li>
+					<li><a href="">传记回忆</a></li>
+					<li><a href="">演讲访谈</a></li>
+					<li><a href="">其他 </a></li>
+				</ul>
+                <ul class="book_asi_con" style="display:none">
+					<li><a href="">全部小说</a></li>
+					<li><a href="">世界名著</a></li>
+					<li><a href="">影视原著</a></li>
+					<li><a href="">推理悬疑</a></li>
+					<li><a href="">科幻</a></li>
+					<li><a href="">中国古典</a></li>
+					<li><a href="">中国现代</a></li>
+					<li><a href="">青春</a></li>
+					<li><a href="">言情</a></li>
+					<li><a href="">历史</a></li>
+					<li><a href="">中国当代</a></li>
+					<li><a href="">中国现代</a></li>
+					<li><a href="">其他 </a></li>
+				</ul>
+				<ul class="book_asi_con" style="display:none">
+					<li><a href="">全部经济管理</a></li>
+					<li><a href="">创新创业</a></li>
+					<li><a href="">市场营销</a></li>
+					<li><a href="">企业经营</a></li>
+					<li><a href="">投资理财</a></li>
+					<li><a href="">领导力</a></li>
+					<li><a href="">财务会计</a></li>
+					<li><a href="">经济</a></li>
+					<li><a href="">金融</a></li>
+					<li><a href="">管理</a></li>
+					<li><a href="">其他 </a></li>
+				</ul>
+				<ul class="book_asi_con" style="display:none">
+					<li><a href="">全部艺术设计</a></li>
+					<li><a href="">设计</a></li>
+					<li><a href="">摄影</a></li>
+					<li><a href="">电影</a></li>
+					<li><a href="">音乐</a></li>
+					<li><a href="">美术</a></li>
+					<li><a href="">戏曲曲艺</a></li>
+					<li><a href="">建筑</a></li>
+					<li><a href="">其他 </a></li>
+				</ul>
+				<ul class="book_asi_con" style="display:none">
+					<li><a href="">全部教育考试</a></li>
+					<li><a href="">外语学习</a></li>
+					<li><a href="">教材辅导</a></li>
+					<li><a href="">国外教材</a></li>
+					<li><a href="">其他 </a></li>
+				</ul>
+				<ul class="book_asi_con" style="display:none">
+					<li><a href="">其他</a></li>
+					<li><a href="">杂志</a></li>
+					<li><a href="">漫画绘本</a></li>
+					<li><a href="">计算机</a></li>
+					<li><a href="">科技科普</a></li>
+					<li><a href="">成功励志</a></li>
+					<li><a href="">人文社科</a></li>
+					<li><a href="">文学史</a></li>
+					<li><a href="">文学理论</a></li>
+					<li><a href="">诗歌赏析</a></li>
+					<li><a href="">传记回忆</a></li>
+					<li><a href="">演讲访谈</a></li>
+					<li><a href="">其他 </a></li>
+				</ul>
+			</div>
+				<div class="create">
+					<a href="bookshef.html"><img src="images/create.png" alt=""><p>去创建属于自己的书架。</p></a>
+				</div>
+			</div>
+		</div>
+	</div>
+ 
+<!-- demo -->
+
+<div class="BreakingNewsController">
+        <div class="demo demo1">
+            <div class="BreakingNewsController easing" id="breakingnews1">
+                <div class="bn-title"></div>
+                <ul>
+                    <li><a href="http://www.sucaihuo.com/js/115.html">1.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/77.html">2.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/97.html">3.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/120.html">4.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/93.html">5.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/113.html">6.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                </ul>
+                <div class="bn-arrows"><span class="bn-arrows-left"></span><span class="bn-arrows-right"></span></div>	
+            </div>
+        </div>
+
+        <div class="demo demo2">
+            <div class="BreakingNewsController easing" id="breakingnews2">
+                <div class="bn-title"></div>
+                <ul id="abc">
+                    <li><a href="http://www.sucaihuo.com/js/42.html">1.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/118.html">2.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/48.html">3.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/92.html">4.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/82.html">5.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/106.html">6.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="http://www.sucaihuo.com/js/103.html">7.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                </ul>
+                <div class="bn-arrows"><span class="bn-arrows-left"></span><span class="bn-arrows-right"></span></div>	
+            </div>
+        </div>
+
+        <div class="demo demo3">
+            <div class="BreakingNewsController easing" id="breakingnews3">
+                <div class="bn-title"></div>
+                <ul>
+                    <li><a href="bookshef.html">1.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="bookshef.html">2.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="bookshef.html">3.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="bookshef.html">4.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="bookshef.html">5.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                    <li><a href="bookshef.html">6.各类书籍，你想买的 想查询的，想借阅的 都在这里</a></li>
+                </ul>
+                <div class="bn-arrows"><span class="bn-arrows-left"></span><span class="bn-arrows-right"></span></div>	
+            </div>
+        </div>
+        </div>
+        <script>
+$(function(){
+	   $('#breakingnews1').BreakingNews({
+                	 titlebgcolor: '#77a1a0',
+                    linkhovercolor: '#ffe001',
+                    border: '1px solid #77a1a0',
+                    title: '公告'
+                });
+
+                $('#breakingnews2').BreakingNews({
+                    title: '滚动新闻',
+                    titlebgcolor: '##77a1a0',
+                    linkhovercolor: '#ffe001',
+                    border: '1px solid #77a1a0',
+                    timer: 4000,
+                    effect: 'slide'
+                });
+
+                $('#breakingnews3').BreakingNews({
+                    title: '一月点击排行',
+                    titlebgcolor: '#77a1a0',
+                    linkhovercolor: '#ffe001',
+                    border: '1px solid #77a1a0',
+                    timer: 5000,
+                    effect: 'slide'
+                });
+})
+        </script>
+<!-- dome-end -->
+
+ <script>
+// $(document).ready(function(){
+// 	$('.showblock').hover(function(){
+// 		$(".block",this).stop().animate({top:'76%'},180);
+// 		},function(){
+// 			$(".block",this).stop().animate({top:'100%'},180);
+// 			});
+// 		});
+</script>
+      <div class="bookbar_class">
+			<div class="bookbar-title">
+				<h1><div class="tubiao"><img src="images/book_title.png" alt=""></div>书吧分区</h1>
+			</div>
+			<div class="bookbarbg">
+		    <div class="bookbar">
+		   	<ul>
+		   		<li>
+		   			<div class="showblock">
+		   			<img src="images/bookbar-1.jpg" alt="">
+		   			<div class="block">
+                 	
+                 		<p>各类书籍，你想买的</p>
+                 </div>
+             </div>
+                 <a href="">各类书籍，你想买的 想查询的，想借阅的 都在这里</a>
+                 
+		   		</li>
+		   		<li>
+		   			<div class="showblock"><img src="images/bookbar-2.jpg" alt="">
+		   			<div class="block">
+                 	
+                 		<p>所谓咖啡区，独家烘焙</p>
+                 </div>
+             </div>
+		   			<a href="">所谓咖啡区，独家烘焙 一杯香浓提神，对了还有 自制奶茶哦</a></li>
+		   		<li>
+		   			<div class="showblock"><img src="images/bookbar-3.jpg" alt="">
+		   			<div class="block">
+                 	
+                 		<p>各种人气周边，海报</p>
+                 </div>
+             </div><a href="">各种人气周边，海报 与xx合作自制手办满足 、二次元的你们。</a></li>
+		   		<li>
+		   			<div class="showblock"><img src="images/bookbar-4.jpg" alt="">
+		   			<div class="block">
+                 	
+                 		<p>海量唱片专辑，所谓一定不</p>
+                 </div>
+             </div><a href="">海量唱片专辑，所谓一定不 会辜负爱音乐的你，提供定 制唱片，和寻找珍贵唱片</a></li>
+		   		<li><div class="showblock"><img src="images/bookbar-5.jpg" alt="">
+		   			<div class="block">
+                 	
+                 		<p>累了不用回家</p>
+                 </div>
+             </div><a href="">累了不用回家，所谓有休息 室，给你最舒适的感觉</a></li>
+		   		<li><div class="showblock"><img src="images/bookbar-6.jpg" alt="">
+		   			<div class="block">
+                 	
+                 		<p>所谓二手传递旧书</p>
+                 </div>
+             </div><a href="">所谓二手传递旧书，分享资 源，共守保护环境</a></li>
+		   	</ul>
+		   </div>
+	
+	</div> 
+		</div>
+		<div class="footer-box">	
+		  <div class="footer-info">
+		  	<div class="info-left">
+		  		<div class="info-left-class">
+		  		<div class="info-left-top">
+		  		<ul>
+		  			<li><a href="">书吧介绍</a></li>
+		  			<li><a href="">所谓产品</a></li>
+		  			<li><a href="">所谓活动</a></li>
+		  			<li><a href="">门店信息</a></li>
+		  			<li><a href="">我的书架</a></li>
+		  			<li><a href="">联系我们</a></li>
+		  		</ul>
+		  	</div>
+		  		<div class="info-left-center">
+		  			<ul>
+		  			<li><img src="images/footer-code.png" alt=""><span>官方微信</span></li>
+		  			<li><img src="images/footer-code.png" alt=""><span>官方微博</span></li>
+		  			<li><img src="images/footer-code.png" alt=""><span>网上商城</span></li>
+		  		</ul>
+		  		</div>
+		  		<div class="info-left-bottom">
+		  			<span>follow us</span>
+		  			<img src="images/con-1.png" alt="">
+		  			<img src="images/con-2.png" alt="">
+		  			<img src="images/con-3.png" alt="">
+		  			<img src="images/con-4.png" alt="">
+		  		</div>
+		  	</div>
+		  	</div>
+		  	<div class="info-right">
+		  		<div class="info-right-class">
+		  		<p>I   WANT   YOU   !!!</p>
+		  		<p>如果你： 积极乐观，性格开朗活泼 喜爱读书 学生会优先 喜爱旅游、手作</p>
+		  		<p>邮箱：<br/> hr@momibook.com  应聘简历请附带作品</p>
+		  	</div></div>
+		  </div>
+
+
+
+		  <div class="contactb">
+		  	<ul>
+		  		<li><a href=""><h4>tel:4008208820</h4></a></li>
+		  		<li><a href=""><h4>18770913577@163.com</h4></a></li>
+		  		<li><a href=""><h4>qq:775174434</h4></a></li>
+		  		<li><a href=""><h4>www.suwenbook.com</h4></a></li>
+		  		<li><a href="" class="return" id="go_top" onclick="javascript:scroll(0,0)">
+		  			</a>
+			</li>
+		  	</ul>
+		  </div>
+		  <div class="footer">
+		  	<p>© ShengZhen suwen Books Co.,Ltd © 所谓书吧图书有限公司   总部电话：700800-8207</p>
+		  </div>
+				</div>
+				<!-- <div class="return" id="go_top" onclick="javascript:scroll(0,0)">
+					<span>返回顶部</span>
+				</div> -->
+				
+</body>
+</html>
+<script>
+	function timer(){
+var dates=new Date();
+ var years=dates.getFullYear();
+ var months=dates.getMonth()+1;
+ var days=dates.getDay();
+ var date=dates.getDate();
+ var hour=dates.getHours();
+ var minutes=dates.getMinutes()
+ var seconds=dates.getSeconds();
+  if(minutes<10){minutes = "0" + minutes;}
+	  else{minutes = minutes + "";}
+	  if(seconds<10){seconds = "0" + seconds;}
+	  else{seconds = seconds + ""}  
+  var id=document.getElementById("Timer")
+ id.innerHTML=years+"年"+months+"月"+date+"日"+" "+"星期"+('日一二三四五六').charAt(days)+hour+":"+minutes+":"+seconds;
+ }
+ timer()
+ setInterval("timer()",1000)
+</script>

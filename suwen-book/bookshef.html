@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <link rel="stylesheet" href="css/about.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bookshef.css">
+<script src="js/jquery.js"></script>
+	<script src="js/style.js"></script>
+</head>
+<body>
+	<div class="logo-box">
+		<div class="logo-a">
+		<div class="logo">
+			<img class="img" src="images/home-logo.png" alt="">
+		</div>
+		<div class="logo-content">
+			<p>这是一个有颜值和价值的书吧。</p>
+			<div class="img"><img src="images/home-logo1.png" alt=""> </div>   
+			<p>我们的征途是星辰和大海，还有书海。</p>
+			<form action="" id="search">
+				<input type="text" value="想要了解..." id="inputSearch">
+				<input type="button">
+			</form>
+		</div></div>
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a href="home-index.html">主&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+			<li><a href="about.html">关于我们</a></li>
+			<li><a href="inform.html">通&nbsp;&nbsp;&nbsp;&nbsp;知</a></li>
+			<li><a href="bookshef.html">书&nbsp;&nbsp;&nbsp;&nbsp;架</a></li>
+			<li><a href="contacts.html">联系我们</a></li>
+				<div class="clear"></div>
+		</ul>
+	</div>
+
+
+<div class="bookshef">
+	<div class="bookshef_con">
+		<div class="bookcon_left">
+			<div class="booka">
+				<span>新书上市</span>
+				<div class="btna">
+					<a href="javascript:void();" class="preva"></a>
+					<a href="javascript:void();" class="nexta"></a>
+				</div>
+				<div class="showimg">
+					<ul>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-1.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-2.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-3.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-4.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-1.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-2.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-3.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-4.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-1.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-2.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-3.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href="bookshef-details.html"><img src="images/bookshef-4.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+					</ul>
+				</div>
+			</div>
+			<script>
+   $(function(){
+    var page = 1;
+    var i = 4; //每版放4个图片
+    //向后 按钮
+    $("a.nexta").click(function(){    //绑定click事件
+	     var $parent = $(this).parents("div.booka");//根据当前点击元素获取到父元素
+		 var $v_show = $parent.find("div.showimg ul"); //寻找到“视频内容展示区域”
+		 var $v_content = $parent.find("div.showimg"); //寻找到“视频内容展示区域”外围的DIV元素
+		 var v_width = $v_content.width() ;
+		 var len = $v_show.find("li").length;
+		 var page_count = Math.ceil(len / i) ;   //只要不是整数，就往大的方向取最小的整数
+		 if( !$v_show.is(":animated") ){  
+			  if( page == page_count ){ 
+				$v_show.animate({ left : '0px'}, "slow"); 
+				page = 1;
+			  }else{
+				$v_show.animate({ left : '-='+v_width }, "slow"); 
+				page++;
+			
+			 }
+			$parent.find("span").eq((page-1)).addClass("current").siblings().removeClass("current");
+		 }
+   });
+    //往前 按钮
+    $("a.preva").click(function(){
+	     var $parent = $(this).parents("div.booka");//根据当前点击元素获取到父元素
+		 var $v_show = $parent.find("div.showimg ul"); //寻找到“视频内容展示区域”
+		 var $v_content = $parent.find("div.showimg"); //寻找到“视频内容展示区域”外围的DIV元素
+		 var v_width = $v_content.width();
+		 var len = $v_show.find("li").length;
+		 var page_count = Math.ceil(len / i);    
+		 if( !$v_show.is(":animated") ){    //判断“视频内容展示区域”是否正在处于动画
+		 	 if( page == 1 ){  //已经到第一个版面了,如果再向前，必须跳转到最后一个版面。
+				$v_show.animate({ left : '-='+v_width*(page_count-1) }, "slow");
+				page = page_count;
+			}else{
+				$v_show.animate({ left : '+='+v_width }, "slow");
+				page--;
+			}
+			$parent.find("span").eq((page-1)).addClass("current").siblings().removeClass("current");
+		}
+    });
+});
+
+</script>
+			<div class="bookb">
+					<span>热门连载</span>
+				<div class="btnb">
+					<a href="javascript:void();" class="prevb"></a>
+					<a href="javascript:void();" class="nextb"></a>
+				</div>
+				<div class="showimg">
+					<ul>
+						<li><a href=""><img src="images/bookshef-1.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href=""><img src="images/bookshef-2.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href=""><img src="images/bookshef-3.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href=""><img src="images/bookshef-4.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>	
+						<li><a href=""><img src="images/bookshef-1.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href=""><img src="images/bookshef-2.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href=""><img src="images/bookshef-3.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href=""><img src="images/bookshef-4.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href=""><img src="images/bookshef-1.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href=""><img src="images/bookshef-2.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href=""><img src="images/bookshef-3.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+						<li><a href=""><img src="images/bookshef-4.jpg" alt=""><span>尾崎</span><span>￥48.00</span></img></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			<script>
+   $(function(){
+    var page = 1;
+    var i = 4; //每版放4个图片
+    //向后 按钮
+    $("a.nextb").click(function(){    //绑定click事件
+	     var $parent = $(this).parents("div.bookb");//根据当前点击元素获取到父元素
+		 var $v_show = $parent.find("div.showimg ul"); //寻找到“视频内容展示区域”
+		 var $v_content = $parent.find("div.showimg"); //寻找到“视频内容展示区域”外围的DIV元素
+		 var v_width = $v_content.width() ;
+		 var len = $v_show.find("li").length;
+		 var page_count = Math.ceil(len / i) ;   //只要不是整数，就往大的方向取最小的整数
+		 if( !$v_show.is(":animated") ){  
+			  if( page == page_count ){ 
+				$v_show.animate({ left : '0px'}, "slow"); 
+				page = 1;
+			  }else{
+				$v_show.animate({ left : '-='+v_width }, "slow"); 
+				page++;
+			
+			 }
+			$parent.find("span").eq((page-1)).addClass("current").siblings().removeClass("current");
+		 }
+   });
+    //往前 按钮
+    $("a.prevb").click(function(){
+	     var $parent = $(this).parents("div.bookb");//根据当前点击元素获取到父元素
+		 var $v_show = $parent.find("div.showimg ul"); //寻找到“视频内容展示区域”
+		 var $v_content = $parent.find("div.showimg"); //寻找到“视频内容展示区域”外围的DIV元素
+		 var v_width = $v_content.width();
+		 var len = $v_show.find("li").length;
+		 var page_count = Math.ceil(len / i);    
+		 if( !$v_show.is(":animated") ){    //判断“视频内容展示区域”是否正在处于动画
+		 	 if( page == 1 ){  //已经到第一个版面了,如果再向前，必须跳转到最后一个版面。
+				$v_show.animate({ left : '-='+v_width*(page_count-1) }, "slow");
+				page = page_count;
+			}else{
+				$v_show.animate({ left : '+='+v_width }, "slow");
+				page--;
+			}
+			$parent.find("span").eq((page-1)).addClass("current").siblings().removeClass("current");
+		}
+    });
+});
+
+</script>
+		<div class="bookcon_right">
+			<div class="bookrank">
+				<span>排行榜</span>
+				<div class="bookka">
+				<a href="">1.往事饭馆.</a>
+				<a href="">2.往事饭馆.</a>
+				<a href="">3.往事饭馆.</a>
+				<a href="">4.往事饭馆.</a>
+				<a href="">5.往事饭馆.</a>
+				<a href="">6.往事饭馆.</a>
+				<a href="">7.往事饭馆.</a>
+				<a href="">8.往事饭馆.</a>
+				<a href="">9.往事饭馆.</a>
+				<a href="">10.往事饭馆.</a>
+				<a href="">11.往事饭馆.</a>
+				<a href="">12.往事饭馆.</a>
+				<a href="">13.往事饭馆.</a>
+				<a href="">14.往事饭馆.</a>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="change">
+	<div class="change_title"><span>我们交换吧</span></div>
+	<div class="changecon">
+		<div class="change_left">
+			<ul>
+				<li>以你心爱之物换我心爱之物，</li>
+				<li>将我们的心头好漂流下去，</li>
+				<li>传递属于你的独家感受</li>
+				<li>所谓提供二手交换平台</li>
+				<li>不浪费你心爱的</li>
+				<li>每一本书</li>
+				<li>共享资源，请登录交换</li>
+			</ul>
+<!-- 			<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+。</p>
+<p></p> -->
+		</div>
+		<script>
+	$(function(){
+		var  adTimer;
+		$(".change_left ul").hover(function(){
+			clearInterval(adTimer);
+		},function(){
+			adTimer=setInterval(function(){
+				show();
+			},1000)
+		}).trigger("mouseleave");
+		  function show(){
+			$(".change_left ul").stop().animate({"margin-top":"-18%"},600,
+				function(){
+					$(".change_left ul li:lt(1)").appendTo(".change_left ul");
+					$(".change_left ul").css("marginTop",0);
+				})
+			}
+	})
+
+</script>
+		<div class="change_right">
+			<form action="">
+				<ul>
+					
+			
+		    <li><label for="">账号：</label><input type="text" id="aa"></li>
+			<li><label for="">密码：</label><input type="password" id="aa"></li>
+				</ul>
+		</form>
+			<a href="">忘记密码</a>
+			<span></span>
+			<a href="a.php">注册</a>
+			<span></span>
+			<a href="a.php">登录</a>
+		</div>
+	</div>
+</div>
+<script>
+	$(function(){
+
+	$("#aa").focus(function(){
+		$(this).addClass("focus");
+		if($(this).val()==this.defaultValue){
+			$(this).val("");
+		}
+	}).blur(function(){
+		$(this).removeClass("focus");
+		if($(this).val()==""){
+			$(this).val(this.defaultValue)
+		}
+	}).keyup(function(e){
+		if(e.which==13){
+			alert('回车提交表单')
+		}
+	})
+})
+
+</script>
+			<div class="footer-box">	
+		  <div class="footer-info">
+		  	<div class="info-left">
+		  		<div class="info-left-class">
+		  		<div class="info-left-top">
+		  		<ul>
+		  			<li><a href="">书吧介绍</a></li>
+		  			<li><a href="">所谓产品</a></li>
+		  			<li><a href="">所谓活动</a></li>
+		  			<li><a href="">门店信息</a></li>
+		  			<li><a href="">我的书架</a></li>
+		  			<li><a href="">联系我们</a></li>
+		  		</ul>
+		  	</div>
+		  		<div class="info-left-center">
+		  			<ul>
+		  			<li><img src="images/footer-code.png" alt=""><span>官方微信</span></li>
+		  			<li><img src="images/footer-code.png" alt=""><span>官方微博</span></li>
+		  			<li><img src="images/footer-code.png" alt=""><span>网上商城</span></li>
+		  		</ul>
+		  		</div>
+		  		<div class="info-left-bottom">
+		  			<span>follow us</span>
+		  			<img src="images/con-1.png" alt="">
+		  			<img src="images/con-2.png" alt="">
+		  			<img src="images/con-3.png" alt="">
+		  			<img src="images/con-4.png" alt="">
+		  		</div>
+		  	</div>
+		  	</div>
+		  	<div class="info-right">
+		  		<div class="info-right-class">
+		  		<p>I   WANT   YOU   !!!</p>
+		  		<p>如果你： 积极乐观，性格开朗活泼 喜爱读书 学生会优先 喜爱旅游、手作</p>
+		  		<p>邮箱：<br/> hr@momibook.com  应聘简历请附带作品</p>
+		  	</div></div>
+		  </div>
+		    <div class="contactb">
+		  	<ul>
+		  		<li><a href=""><h4>电话：4008208820</h4></a></li>
+		  		<li><a href=""><h4>18770913577@163.com</h4></a></li>
+		  		<li><a href=""><h4>QQ：775174434</h4></a></li>
+		  		<li><a href=""><h4>www.suwenbook.com</h4></a></li>
+		  		<li><a href="" class="return" id="go_top" onclick="javascript:scroll(0,0)">
+		  			</a>
+			</li>
+		  	</ul>
+		  </div>
+		  <div class="footer">
+		  	<p>© ShengZhen suwen Books Co.,Ltd © 所谓书吧图书有限公司   总部电话：700800-8207</p>
+		  </div>
+				</div>
+
+</body>
+</html>

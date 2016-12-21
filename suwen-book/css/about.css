@@ -1,0 +1,232 @@
+/*=============================about us=================================*/
+body{
+	width:100%;
+}
+.about-us-title{
+	width: 100%;
+	/*border-bottom:1px solid #;*/
+	overflow: hidden;
+	margin-top: 1%;
+	background: #fafafa;
+	
+}
+@keyframes myfirst
+{
+0%   {left:0px; top:0px;}
+25%  {left:400px; top:0px;}
+50%  {left:800px; top:0px;}
+75%  {left:400px; top:0px;}
+100% {left:0px; top:0px;}
+}
+.about-us-class{
+	width: 70%;
+	margin: 0 auto;
+}
+.about-us-class span{
+	border: 3px solid #ffe001;
+	display: block;
+	width: 15%;
+	margin: 5px;
+	border-radius: 10px;
+	position:relative;
+animation:myfirst 8s;
+-moz-animation:myfirst 8s; /* Firefox */
+-webkit-animation:myfirst 8s; /* Safari and Chrome */
+-o-animation:myfirst 8s; /* Opera */	
+}
+.about-us-class span:hover{
+	animation-play-state:paused;
+}
+.about-us-class span a{
+	background: #fff;
+	width: 100%;
+	font:2.5rem "微软雅黑";
+	font-weight: 300;
+	text-align: center;
+	display: block;
+}
+.about-us-class span a:hover{
+	color: #fff;
+    background: #ffe001;
+};
+.about-content{
+	width: 100%;
+	overflow: hidden;
+}
+.about-content-class{
+	width: 70%;
+	margin: 0 auto;
+	/*background:#ff0;*/
+	overflow: hidden;
+}
+.about-content-left{
+	width: 30%;
+	float: left;
+
+}
+.cl{
+	margin-top: 5%;
+	border: 1px solid #ccc;
+	width: 100%;
+	padding: 2%;
+	padding-left:5%;
+}
+.cl h1{
+	font-weight:300;
+	font:2.5rem/3rem "微软雅黑";
+	color: #ffe001;
+}
+.cl h3{
+	font-weight: 300;
+	font:1.7rem/2.5rem "微软雅黑";
+	color: #333;
+}
+.cl p{
+	font-weight: 300;
+	font:2rem/3.5rem "微软雅黑";
+	color: #ffe001;
+	
+}
+.cl p:hover{
+	text-shadow: 2px 2px 2px #333;
+}
+.about-content-right{
+	float:right;
+	width:66%;
+	margin-top: 2%;
+	overflow: hidden;
+}
+.about-content-right .img_t{
+	width: 100%;
+	float: left;
+	transition:all 4s;
+}
+.about-content-right .img_t:hover{
+	transform:rotateX(180deg);
+}
+.about-content-right .img_b{
+  overflow: hidden;
+  width: 100%; 
+}
+.about-content-right .img_b img:nth-child(1){
+    float: left;
+    width: 48%;
+    margin-top:5%;
+    transition:transform 4s;
+}
+.about-content-right .img_b img:nth-child(1):hover{
+	transform:rotateY(180deg);
+}
+.about-content-right .img_b img:nth-child(2){
+    float:right;  
+    width: 48%;
+    margin-top:5%;
+    transition:transform 4s;
+}
+.about-content-right .img_b img:nth-child(2):hover{
+	transform:rotate(720deg);
+}
+
+/*==================================wanted==============================*/
+.wanted{
+	width: 100%;
+	background: #ffe001;
+	margin-top: 2%;
+}
+.wanted .want p:hover{
+	/*border:1px solid #000;*/
+	background: #fff;
+	color: #333;
+	/*font-weight: 500;*/
+	transition: all 2s;
+}
+.wanted .want{
+	width: 70%;
+	margin: 0 auto;
+}
+.wanted .want p{
+	text-align: center;
+	font:2.5rem "微软雅黑";
+	font-weight: 300;
+	color: #fff;
+	padding: 1% 0;
+}
+.wanted-box{
+	width:100%;
+}
+.wanted-box-content{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 3%;
+	overflow: hidden;
+}
+.wanted-box-content .wbc_left{
+	width: 30%;
+	/*border: 1px solid #000;*/
+	float: left;
+	height: 28rem;
+}
+.wanted-box-content .wbc_left img {
+	width:100%;
+	transition:all 4s;
+}
+.wanted-box-content .wbc_left img:hover{
+	transform:rotateY(180deg);
+}
+.wanted-box-content .wbc_left .wbc_a span{
+	font:2rem "微软雅黑";
+	font-weight: 300;
+	display: block;
+	
+	width: 60%;
+	margin: 0 auto;
+	padding: 5px;
+}
+.wanted-box-content .wbc_right{
+	width: 70%;
+	float: right;
+	background: #fafafa;
+}
+.wanted-box-content .wbc_right_top{
+	background: #97b7b6;
+	font:2rem "微软雅黑";
+	color: #fff;
+	padding: 1%;
+}
+.wanted-box-content .wbc_right_top span{
+	border: 2px solid #fff;
+	padding: 0 1%;
+	margin-left: 7%;
+}
+.wanted-box-content .wbc_right_top p{
+	display: inline-block;
+	margin-left: 4%;
+}
+.wanted-box-content .wbc_right_bottom{
+	border: 2px solid  #97b7b6;
+	overflow:hidden;
+	width: 90%;
+	margin: 3% auto;
+	color: #333;
+}
+.wanted-box-content .wbc_right_bottom .wcb_one{
+	width: 30%;
+	/*background: #ff0;*/
+	float: left;
+	margin-left: 2%;
+}
+.wanted-box-content .wbc_right_bottom .wcb_two{
+	width: 60%;
+	float: left;
+	margin-left: 2%;
+}
+.wanted-box-content .wbc_right_bottom .wcb_one span,.wcb_two span{
+	font:2rem/3 "微软雅黑";
+	font-weight: bold;
+
+}
+.wanted-box-content .wbc_right_bottom .wcb_one p,.wcb_two p{
+    font-weight: 300;
+	font:1.2rem/2 "微软雅黑";
+	
+}

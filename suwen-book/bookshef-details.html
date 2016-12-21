@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/details.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/style.js"></script>
+	<script src="js/details.js"></script>
+
+	</script>
+</head>
+<body>
+	<div class="logo-box">
+		<div class="logo-a">
+		<div class="logo">
+			<img class="img" src="images/home-logo.png" alt="">
+		</div>
+		<div class="logo-content">
+			<p>这是一个有颜值和价值的书吧。</p>
+			<div class="img"><img src="images/home-logo1.png" alt=""> </div>   
+			<p>我们的征途是星辰和大海，还有书海。</p>
+			<form action="" id="search">
+				<input type="text" value="想要了解..." id="inputSearch">
+				<input type="button">
+			</form>
+		</div></div>
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a href="home-index.html">主&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+			<li><a href="about.html">关于我们</a></li>
+			<li><a href="inform.html">通&nbsp;&nbsp;&nbsp;&nbsp;知</a></li>
+			<li><a href="bookshef.html">书&nbsp;&nbsp;&nbsp;&nbsp;架</a></li>
+			<li><a href="contacts.html">联系我们</a></li>
+				<div class="clear"></div>
+		</ul>
+	</div>
+
+<div class="bookshef_details">
+ <div class="bookde_title">
+ 	<div><a href="">图书</a> ><a href="">小说</a>><a href="">侦探悬疑推理</a>><a href="">新经典</a>><a href="">白夜行</a>
+ 	</div>
+ </div>
+	<div class="bookshefd_con">
+		<div class="bc_left">
+			<img src="images/details-1_big.png" alt="" id="bigimg">
+			<ul>
+				<li><a href=""> <img src="images/details-1.png" alt=""></a></li>
+				<li><a href=""><img src="images/details-1.png" alt=""></a></li>
+				<li><a href=""><img src="images/details-1.png" alt=""></a></li>
+			</ul>
+		</div>
+		<script>
+$(function(){
+	$(".bc_left ul li a").bind("click",function(){
+		var imgSrc=$(this).find("img").attr("src");
+		var i=imgSrc.lastIndexOf(".");
+		var unit=imgSrc.substring(i);
+		imgSrc=imgSrc.substring(0,i);
+		var imgSrc_big=imgSrc+"_big"+unit;
+		$("#bigimg").attr("src",imgSrc_big)
+	})
+})
+		</script>
+		<div class="bc_right">
+			<h4>东野圭吾推理小说无冕之王《白夜行》，全新精装典藏版</h4>
+			<div class="price">
+			<span>价格：</span>
+		   <span> ￥49</span>
+		   <span>本店活动：满99包邮</span>
+		</div>
+		<div class="expre">
+			<span>江苏苏州至</span>
+			<select name="" id="">
+				<option value="">aaa</option>
+				<option value="">bbb</option>
+				<option value="">ccc</option>
+				<option value="">ddd</option>
+			</select>
+			<span>快递：8:00</span>
+		</div>
+			<div class="promise">
+				<span>服务承诺</span>
+				<span>正品保证</span>
+				<span>七天无理由退换</span>
+			</div>
+			<div class="class">
+				<p>种类：</p><strong>未选择</strong>
+				<span>全新精装典藏版1</span>
+				<span>全新精装典藏版2</span>
+				<span>全新精装典藏版3</span>
+				<span>全新精装典藏版4</span>
+			</div>
+			
+			<div class="buychoose">
+  <dl class="pProps" id="choosenum">
+    <dt>购买数量： </dt>
+    <dd id="choose-num">
+    	<a class="reduce" id="jian" onclick="reductBuynum()">-</a>
+        <input id="buycount" value="1" /> 
+        <a class="add" id="jia" onclick="addBuynum()">+</a>
+    </dd>
+  </dl>
+
+  <div class="clear" style="clear:both"></div>
+  <div class="car">
+  <span>加入购物车</span>
+  <span>立即购买</span>
+  <p>温馨提示：
+支持7天无理由退货</p>
+</div>
+</div>
+<div class="shop">
+	
+	<img src="images/home-logo1.png" alt="">
+	<div>
+	<a href="">所谓文化></a>
+	<a href="">进入店铺</a>
+   </div>
+	<img src="images/heart-1.png" alt="">
+</div>
+		</div>
+	</div>
+</div>
+<div class="clear" style="clear:both"></div>
+
+
+<div class="tabcon">
+<div class="tab_meua">
+	<ul>
+		<li><a href="">商品详情</a></li>
+		<li><a href="">累计评价</a></li>
+		<li><a href="">其他商品</a></li>
+	</ul>
+</div>
+<div class="tab_box">
+	<div class="aa tone" style="display:block">
+		<ul>
+			<li>多年以前，大阪的一栋废弃建筑中发现一名遭利器刺死的男子。案件扑朔迷离，始终悬而未决。此后20年间，案件滋生出的恶逐渐萌芽生长，绽放出恶之花。案件相关者的人生逐渐被越来越重的阴影笼罩……
+　　我的天空里没有太阳，总是黑夜，但并不暗，因为有东西代替了太阳。虽然没有太阳那么明亮，但对我来说已经足够。凭借着这份光，我便能把黑夜当成白天。我从来就没有太阳，所以不怕失去。
+　　《东野圭吾作品：白夜行》出版之后引起巨大轰动，使东野圭吾成为天王级作家。小说被改编成同名电视连续剧，与图书一同为作家带来了如潮好评，使他成为日本、韩国与中国台湾等地受欢迎的作家之一。“只希望能手牵手在太阳下散步”，这句象征《东野圭吾作品：白夜行》故事内核的绝望念想，有如一个美丽的幌子，随着无数凌乱、压抑、悲凉的事件片段如纪录片一样一一还原，仅剩一丝温情也被完全抛弃，万千读者在一曲救赎罪恶的爱情之中悲切动容。
+作者简介
+　　</li>
+<li>东野圭吾，日本作家。
+　　1985年，凭《放学后》获第31届江户川乱步奖，开始专职写作；1999年，《秘密》获第52届日本推理作家协会奖；此后《白夜行》、《单恋》、《信》、《幻夜》先后入围直木奖。
+　　2005年出版的《嫌疑人X的献身》第134届直木奖、第6届本格推理小说大奖，以及年度三大推理小说排行榜前列一并斩获；2008年，《流星之绊》获第43届新风奖。
+　　2009年出版的《新参者》获两大推理小说排行榜年度前列；2012年，《浪矢杂货店的奇迹》获第7届中央公论文艺奖。</li>
+<li>★《白夜行》将无望却坚守的凄凉爱情和执着而缜密的冷静推理完美结合，被众多书迷视作东野圭吾作品中的无冕之王。
+　　——北京晚报</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★东野圭吾对情感的刻画常常跟紧张的推理悬念扣在一起，处理得出人意料，不落俗套。
+　　——新民晚报</li>
+		</ul>
+	</div>
+	<div class="aa ttwo" style="display:none">
+		<div class="top">
+			<input type="radio" id="b"><label for="b">好评</label>
+			<input type="radio" id="b">中评<label for="b"></label>
+			<input type="radio" id="b">差评<label for="b"></label>
+		</div>
+		<div class="bottom">
+			<ul>
+				<li>
+					<div><span><img src="" alt=""></span><span>下单23天后评论</span><span>2016-08-24 10:53</span></div>
+					<p>拿到书感觉书挺实在的，质量没话说不像盗版的。第一次买这个作者的书，读了就停不下来了，剧情很吸引我，喜欢，今天又上来买了几本东野圭吾的书…</p></li>
+				<li>
+					<div><span><img src="" alt=""></span><span></span>下单23天后评论<span>2016-08-24 10:53</span></div>
+					<p>拿到书感觉书挺实在的，质量没话说不像盗版的。第一次买这个作者的书，读了就停不下来了，剧情很吸引我，喜欢，今天又上来买了几本东野圭吾的书…</p></li>
+				<li>
+					<div><span><img src="" alt=""></span><span></span>下单23天后评论<span>2016-08-24 10:53</span></div>
+					<p>拿到书感觉书挺实在的，质量没话说不像盗版的。第一次买这个作者的书，读了就停不下来了，剧情很吸引我，喜欢，今天又上来买了几本东野圭吾的书…</p></li>
+				<li>
+					<div><span><img src="" alt=""></span><span></span>下单23天后评论<span>2016-08-24 10:53</span></div>
+					<p>拿到书感觉书挺实在的，质量没话说不像盗版的。第一次买这个作者的书，读了就停不下来了，剧情很吸引我，喜欢，今天又上来买了几本东野圭吾的书…</p></li>
+					<li>
+					<div><span><img src="" alt=""></span><span></span>下单23天后评论<span>2016-08-24 10:53</span></div>
+					<p>拿到书感觉书挺实在的，质量没话说不像盗版的。第一次买这个作者的书，读了就停不下来了，剧情很吸引我，喜欢，今天又上来买了几本东野圭吾的书…</p></li>
+					<a href="">下一页>></a>
+			</ul>
+		</div>
+	</div>
+	<div class="aa tthree" style="display:none">
+		<ul>
+			<li> <img src="images/detail-2.png" alt="">
+			<span>解忧杂货铺</span> </li>
+			<li><img src="images/detail-2.png" alt="">
+				<span> 嫌疑人x的献身</span></li>
+			<li><img src="images/detail-2.png" alt="">
+				<span>白夜行</span></li>
+				<li> <img src="images/detail-2.png" alt="">
+			<span>解忧杂货铺</span> </li>
+			<li><img src="images/detail-2.png" alt="">
+				<span> 嫌疑人x的献身</span></li>
+			<li><img src="images/detail-2.png" alt="">
+				<span>白夜行</span></li>
+		</ul>
+	</div>
+</div>
+</div>
+<script>
+	$(function(){
+	var $div_li=$("div.tab_meua ul li")
+         $div_li.mouseover(function(){
+         	$(this).addClass("tablibg")
+         	.siblings().removeClass("tablibg");
+         	var index=$div_li.index(this);
+         	$("div.tab_box>div.aa")
+         	.eq(index).show()
+         	.siblings().hide()
+         }).hover(function(){
+         	$(this).addClass("hover")
+         }),function(){
+         	$(this).removeClass("hover")
+         }
+})
+</script>	
+			<div class="footer-box">	
+		  <div class="footer-info">
+		  	<div class="info-left">
+		  		<div class="info-left-class">
+		  		<div class="info-left-top">
+		  		<ul>
+		  			<li><a href="">书吧介绍</a></li>
+		  			<li><a href="">所谓产品</a></li>
+		  			<li><a href="">所谓活动</a></li>
+		  			<li><a href="">门店信息</a></li>
+		  			<li><a href="">我的书架</a></li>
+		  			<li><a href="">联系我们</a></li>
+		  		</ul>
+		  	</div>
+		  		<div class="info-left-center">
+		  			<ul>
+		  			<li><img src="images/footer-code.png" alt=""><span>官方微信</span></li>
+		  			<li><img src="images/footer-code.png" alt=""><span>官方微博</span></li>
+		  			<li><img src="images/footer-code.png" alt=""><span>网上商城</span></li>
+		  		</ul>
+		  		</div>
+		  		<div class="info-left-bottom">
+		  			<span>follow us</span>
+		  			<img src="images/con-1.png" alt="">
+		  			<img src="images/con-2.png" alt="">
+		  			<img src="images/con-3.png" alt="">
+		  			<img src="images/con-4.png" alt="">
+		  		</div>
+		  	</div>
+		  	</div>
+		  	<div class="info-right">
+		  		<div class="info-right-class">
+		  		<p>I   WANT   YOU   !!!</p>
+		  		<p>如果你： 积极乐观，性格开朗活泼 喜爱读书 学生会优先 喜爱旅游、手作</p>
+		  		<p>邮箱：<br/> hr@momibook.com  应聘简历请附带作品</p>
+		  	</div></div>
+		  </div>
+		    <div class="contactb">
+		  	<ul>
+		  		<li><a href=""><h4>电话：4008208820</h4></a></li>
+		  		<li><a href=""><h4>18770913577@163.com</h4></a></li>
+		  		<li><a href=""><h4>QQ：775174434</h4></a></li>
+		  		<li><a href=""><h4>www.suwenbook.com</h4></a></li>
+		  		<li><a href="" class="return" id="go_top" onclick="javascript:scroll(0,0)">
+		  			</a>
+			</li>
+		  	</ul>
+		  </div>
+		  <div class="footer">
+		  	<p>© ShengZhen suwen Books Co.,Ltd © 所谓书吧图书有限公司   总部电话：700800-8207</p>
+		  </div>
+				</div>
+
+</body>
+</html>

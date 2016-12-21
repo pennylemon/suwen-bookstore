@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <link rel="stylesheet" href="css/about.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contacts.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/style.js"></script>
+</head>
+<body>
+	<div class="logo-box">
+		<div class="logo-a">
+		<div class="logo">
+			<img class="img" src="images/home-logo.png" alt="">
+		</div>
+		<div class="logo-content">
+			<p>这是一个有颜值和价值的书吧。</p>
+			<div class="img"><img src="images/home-logo1.png" alt=""> </div>   
+			<p>我们的征途是星辰和大海，还有书海。</p>
+			<form action="" id="search">
+				<input type="text" value="想要了解..." id="inputSearch">
+				<input type="button">
+			</form>
+		</div></div>
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a href="home-index.html">主&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+			<li><a href="about.html">关于我们</a></li>
+			<li><a href="inform.html">通&nbsp;&nbsp;&nbsp;&nbsp;知</a></li>
+			<li><a href="bookshef.html">书&nbsp;&nbsp;&nbsp;&nbsp;架</a></li>
+			<li><a href="contacts.html">联系我们</a></li>
+				<div class="clear"></div>
+		</ul>
+	</div>
+
+<div class="contacts">
+	<!-- <img src="images/contactsbg.jpg" alt=""> -->
+	<!-- <img src="images/contactsbg.jpg" alt=""> -->
+	<!-- <img src="images/contactsbg.jpg" alt=""> -->
+</div>
+<div class="contacts_con">
+		<div class="con_left">
+			<div class="con_left_t">
+				<ul>
+					<span>门店信息：</span>
+					<li>嘉善县西塘景点区</li>
+					<li>杭州南宋御街</li>	
+				</ul>
+			
+			
+		</div>
+			<div class="con_left_b">
+				<span>有想法可以给我们留言</span>
+					<span>我们的联系方式：</span>
+                <ul>
+					<li>电话：1234567890</li>
+					<li>微信公众号：所谓书吧</li>
+					<li>微博ID：是家所谓的书吧</li>
+					<li>邮件：xxxxx@163.com</li>
+				</ul>			
+		</div>
+		</div>
+		<div class="con_right">
+			<form action="">
+				<ul>
+					<li><label for="">姓&nbsp;&nbsp;名：</label><input type="text" ></li>
+					<li><label for="">email：</label><input type="text" ></li>
+					<li><label for="">电&nbsp;&nbsp;话：</label><input type="text" ></li>
+					<li><label for="">地&nbsp;&nbsp;址：</label><input type="text" ></li>
+					<li><label for="">留&nbsp;&nbsp;言：</label>
+						<textarea name=""  cols="40" rows="10"></textarea></li>
+					<button type="button" id="btn">发送</button>
+				</ul>
+			</form>
+		</div>
+	</div>
+
+<script>
+	$(function(){
+
+	$(".con_right input").focus(function(){
+		$(this).addClass("focus");
+		if($(this).val()==this.defaultValue){
+			$(this).val("");
+		}
+	}).blur(function(){
+		$(this).removeClass("focus");
+		if($(this).val()==""){
+			$(this).val(this.defaultValue)
+		}
+	})
+})
+</script>
+
+			<div class="footer-box">	
+		  <div class="footer-info">
+		  	<div class="info-left">
+		  		<div class="info-left-class">
+		  		<div class="info-left-top">
+		  		<ul>
+		  			<li><a href="">书吧介绍</a></li>
+		  			<li><a href="">所谓产品</a></li>
+		  			<li><a href="">所谓活动</a></li>
+		  			<li><a href="">门店信息</a></li>
+		  			<li><a href="">我的书架</a></li>
+		  			<li><a href="">联系我们</a></li>
+		  		</ul>
+		  	</div>
+		  		<div class="info-left-center">
+		  			<ul>
+		  			<li><img src="images/footer-code.png" alt=""><span>官方微信</span></li>
+		  			<li><img src="images/footer-code.png" alt=""><span>官方微博</span></li>
+		  			<li><img src="images/footer-code.png" alt=""><span>网上商城</span></li>
+		  		</ul>
+		  		</div>
+		  		<div class="info-left-bottom">
+		  			<span>follow us</span>
+		  			<img src="images/con-1.png" alt="">
+		  			<img src="images/con-2.png" alt="">
+		  			<img src="images/con-3.png" alt="">
+		  			<img src="images/con-4.png" alt="">
+		  		</div>
+		  	</div>
+		  	</div>
+		  	<div class="info-right">
+		  		<div class="info-right-class">
+		  		<p>I   WANT   YOU   !!!</p>
+		  		<p>如果你： 积极乐观，性格开朗活泼 喜爱读书 学生会优先 喜爱旅游、手作</p>
+		  		<p>邮箱：<br/> hr@momibook.com  应聘简历请附带作品</p>
+		  	</div></div>
+		  </div>
+		    <div class="contactb">
+		  	<ul>
+		  		<li><a href=""><h4>电话：4008208820</h4></a></li>
+		  		<li><a href=""><h4>18770913577@163.com</h4></a></li>
+		  		<li><a href=""><h4>QQ：775174434</h4></a></li>
+		  		<li><a href=""><h4>www.suwenbook.com</h4></a></li>
+		  		<li><a href="" class="return" id="go_top" onclick="javascript:scroll(0,0)">
+		  			</a>
+			</li>
+		  	</ul>
+		  </div>
+		  <div class="footer">
+		  	<p>© ShengZhen suwen Books Co.,Ltd © 所谓书吧图书有限公司   总部电话：700800-8207</p>
+		  </div>
+				</div>
+
+</body>
+</html>

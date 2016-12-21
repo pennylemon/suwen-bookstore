@@ -1,0 +1,324 @@
+.bookshef_details{
+	width:100%;
+	/*margin-top:1%;*/
+}
+.bookde_title{
+	width: 100%;
+	background: #ffe001;
+
+}
+.bookde_title>div{
+	margin-top: 2%;
+	width: 70%;
+    margin:0 auto;
+    font:2rem/2 "微软雅黑";
+    font-weight: 300;
+    color:#fff;
+    overflow: hidden;
+}
+.bookde_title>div>a{
+	 color:#fff;
+}
+.bookshefd_con{
+	width: 70%;
+	margin: 0 auto;
+}
+.bookshefd_con .bc_left{
+	float: left;
+    width: 40%;
+}
+.bookshefd_con .bc_left>img{
+	margin-left: 2%;
+	border: 1px solid #ccc;
+}
+.bookshefd_con .bc_left ul{
+	width: 100%;
+	overflow: hidden;
+	 margin-top: 2%;
+	 margin-left: 2%;
+}
+.bookshefd_con .bc_left ul li{
+    float: left;
+    margin-left: 1%;
+    border: 1px solid #ccc;
+    margin-top: 5%;
+}
+.bookshefd_con .bc_right{
+     width:60%;
+      /*background: red;*/
+      float: left;
+}
+.bookshefd_con .bc_right h4{
+    margin-top: 2%;
+	font:2rem "微软雅黑";
+}
+.bookshefd_con .bc_right .price{
+	width: 100%;
+	background: #fafafa;
+	overflow: hidden;
+	font:1.5rem/2 "微软雅黑";
+	margin-top: 2%;
+}
+
+.bookshefd_con .bc_right .price span{
+	display: block;
+}
+.bookshefd_con .bc_right .price span:nth-child(2){
+	float: left;
+	color: #ffe001;
+}
+.bookshefd_con .bc_right .price span:nth-child(1){
+	float: left;
+}
+.bookshefd_con .bc_right .price span:nth-child(3){
+	clear: both;
+}
+.bookshefd_con .bc_right .expre{
+	width: 100%;
+	overflow: hidden;
+	
+}
+.class{
+	width: 100%;
+	/*background: #ff0;*/
+}
+.class strong{
+	padding: 2%;
+	display: block;
+	width: 100%;
+	float: left;
+		font:2rem "微软雅黑";
+		color: #ffe001
+}
+.class p{
+	font:1.5rem "微软雅黑";
+}
+.class span{
+	width: 20%;
+	display: block;
+	border:1px solid #eee;
+	text-align: center;
+	float: left;
+	margin-right: 15%;
+	margin-bottom: 3%;
+	padding: 1%;
+}
+.bookshefd_con .bc_right .expre span{
+	font:1.5rem/2 "微软雅黑";
+}
+.bookshefd_con .bc_right .expre details{
+	background: none;
+	border: none;
+}
+.bookshefd_con .bc_right .promise{
+	width: 100%;
+	font:1.5rem/2 "微软雅黑";
+}
+.buychoose{
+	width: 100%;
+	font:1.5rem/2 "微软雅黑";
+	overflow: hidden;
+}
+.buychoose input{
+	width: 10%;
+	display: block;
+	float: left;
+	height: 2rem;
+	border:1px solid #333;
+	margin-right: 10px;
+	text-align: center;
+}
+.reduce,.add{
+	display: block;
+	width: 10%;
+	border:1px solid #333;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+}
+
+.car{
+	overflow: hidden;
+	width: 100%;
+	font:2rem/2 "微软雅黑";
+}
+.buychoose .car span{
+	display: block;
+	width: 20%;
+	float: left;
+	overflow: hidden;
+	border: 1px solid #333;
+	margin-top: 2%;
+	margin-right:2%;
+	text-align: center;
+}
+.buychoose .car span:nth-child(1){
+	color: #ffe001;
+}
+.buychoose .car span:nth-child(2){
+    background: #ffe001;
+    color: #fff;
+    border: 1px solid #ffe001;
+}
+.buychoose .car p{
+	clear: both;
+	font: 1.5rem "微软雅黑";
+	margin-top: 2%;
+	display: block;
+	overflow: hidden;
+}
+.shop{
+	width: 100%;
+	background: #fafafa;
+	overflow: hidden;
+	padding-top: 5%;
+	padding-bottom:5%;
+}
+.shop img{
+     float: left;
+     display: block;margin-left: 10%;
+}
+.shop div{
+	display: block;
+	width: 20%;
+	font: 2rem "微软雅黑";
+	float: left;
+	margin-left: 10%;
+
+}
+.shop img:nth-child(2){
+	display:block;
+	float: right;
+}
+.shop img:nth-child(3):hover{
+	background: url(../images/heart-2.png) no-repeat;
+}
+.tabcon{
+	width: 70%;
+	margin: 0 auto;
+	/*background: #ff0;*/
+	/*border:;*/
+	border-bottom:  1px solid #ccc;
+	border-top:  1px solid #ccc;
+	margin-top: 2%;
+	height: 45rem;
+}
+.tab_meua{
+	width: 100%;
+	/*background: #fff;*/
+	
+	overflow: hidden;
+	
+}
+.tab_meua ul{
+	width: 100%;
+	overflow: hidden;
+}
+.tab_meua ul li{
+	/*background: red;*/
+	width: 15%;
+	text-align: center;
+	float: left;
+	font:2rem "微软雅黑";
+	padding: 1%;
+	border-right: 1px solid #ccc;
+}
+.tab_meua ul li:hover a{
+	color: #fff;
+}
+.tablibg{
+	background: #ffe001;
+	color: #fff;
+}
+.hover{}
+.tab_box{
+	width: 100%;
+	overflow: hidden;
+	border-top: 1px solid #ccc;
+}
+.tab_box .tone,.tab_box .ttwo,.tab_box .tthree{
+	width: 100%;
+	overflow: hidden;
+}
+.tab_box .tone ul,.tab_box .ttwo ul,.tab_box .tthree ul{
+	width: 100%;
+}
+.tab_box .tthree ul li{
+	width: 25%;
+	float: left;
+	margin: 3%;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+.tab_box .tthree ul li img{
+	display: block;
+	width: 80%;
+	float: left;
+} 
+.tab_box .tthree ul li span{
+	width: 20%;
+	display: block;
+	float: left;
+	font: 1.5rem "微软雅黑";
+	margin-top: 50%;
+}
+.tab_box .tone ul li{
+	font: 1.5rem "微软雅黑";
+	/*border:1px solid #ccc;*/
+	margin-bottom: 5%;
+	text-indent: 2em;
+}
+.tab_box .tone ul li:nth-child(1){
+	/*border: 1px solid #ccc;*/
+	border-bottom:1px solid #ccc;
+	margin-top: 2%;
+}
+.tab_box .tone ul li:nth-child(2){
+	background: #fafafa;
+}
+.tab_box .ttwo .top{
+	font: 2rem "微软雅黑";
+}
+.tab_box .ttwo .top input{
+	/*display: block;*/
+	margin-left: 2%;
+}
+.tab_box .ttwo .bottom{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 2%;
+
+}
+.tab_box .ttwo .bottom ul{
+	width: 100%;
+	overflow: hidden;
+	/*background: #ff0;*/
+
+}
+.tab_box .ttwo .bottom ul li{
+	border-bottom: 1px solid #ccc;
+	padding: 2%;
+	font: 1rem "微软雅黑";
+	margin-bottom: 1%;
+}
+.tab_box .ttwo .bottom ul li div{
+	float: left;
+	display: block;
+	margin-left: 2%;
+	width: 15%;
+}
+.tab_box .ttwo .bottom ul li div span{
+	display: block;
+}
+.tab_box .ttwo .bottom ul li p{
+	margin-left: 5%;
+	width: 80%;
+}
+.tab_box .ttwo .bottom a{
+	display: block;
+	text-align: center;
+}
+
+.cur{
+	background: #ffe001;
+}
